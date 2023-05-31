@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Payment Simulator</title>
+
+    <link rel="stylesheet" href="CreditCard.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <script src="CreditCard.js"></script>
+        
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="main-title">
+            <h1>Pay by Credit Card</h1>
+        </div>
+
+        <div class="body-container">
+            <div class="content-header">
+                <div class="header-title">
+                    <div class="item" ><h3>Items</h3></div>
+                    <div class="price" ><h3>Price</h3></div>
+                </div>
+                <div class="items">
+                    <div class="burger" onclick="OnClick('Burger')">
+                        <div class="item-title-photo">
+                            <div class="item-title"><h2>Burger</h2></div>
+                            <div class="item-photo"><img src="stuff/burger.png" alt="burger"></div>
+                        </div>
+                        <div class="item-price"><h2>$6</h2></div>
+                    </div>
+                    <div class="pizza"  onclick="OnClick('Pizza')">
+                        <div class="item-title-photo">
+                            <div class="item-title"><h2>Pizza</h2></div>
+                            <div class="item-photo"><img src="stuff/pizza.png" alt="pizza"></div>
+                        </div>
+                        <div class="item-price"><h2>$15</h2></div>
+                    </div>
+                    <div class="shawarma"   onclick="OnClick('Shawarma')">
+                        <div class="item-title-photo">                  
+                            <div class="item-title"><h2>Shawarma</h2></div>
+                            <div class="item-photo"><img src="stuff/shawarma.png" alt="shawarma"></div>
+                        </div>
+                        <div class="item-price"><h2>$4</h2></div>
+                    </div>
+                    <div class="KFC"    onclick="OnClick('KFC')">
+                        <div class="item-title-photo">
+                            <div class="item-title"><h2>KFC</h2></div>
+                            <div class="item-photo"><img src="stuff/crispy-fried.png" alt="kfc"></div>
+                        </div>
+                        <div class="item-price"><h2>$18</h2></div>
+                    </div>
+                    <div class="tacos"  onclick="OnClick('Tacos')">
+                        <div class="item-title-photo">
+                            <div class="item-title"><h2>Tacos</h2></div>
+                            <div class="item-photo"><img src="stuff/Taco.png" alt="tacos"></div>
+                        </div>
+                        <div class="item-price"><h2>$7</h2></div>
+                    </div>
+                </div>
+            </div>
+            <div class="visa-container">
+                <div class="order-info-container">
+                    <div class="your-order-items">
+                        <input type="text=" placeholder="Your Order Items" id="your-item" >
+                    </div>
+                    <div class="your-order-price">
+                        <input type="text=" placeholder="Total Price"   id="Total-Price" >
+                    </div>
+                </div>
+                <div class="visa-front-back">
+                    <div class="visa-front">
+                        <div class="card-number-container">
+                            <input type="number" class="visa-number" id="cardNumber" placeholder="Card Number"> 
+                        </div>
+                        <div class="card-holder-name">
+                            <input type="text" class="visa-name" id="cardHolderName" placeholder="Card Holder Name"> 
+                        </div>
+                        <div class="visa-logo">
+                            <img src="stuff/visa-logo.png" alt="visa">
+                        </div>
+                    </div>
+                    <div class="visa-back-container">
+                        <div class="empty-div-gray"></div>
+                        <div class="cvv-card">
+                            <input type="number" class="cvv-number" id="cvvNumber" placeholder="CVV">
+                        </div>
+                    </div>
+                    <div class="sendButton" id="sendButton" onclick="OnClickPay()">Pay</div>
+                </div>
+                <div class="order-info-container">
+                    <div class="paymeent-result">
+                        <input type="text=" id="result" placeholder="Payment Result will appear here">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
