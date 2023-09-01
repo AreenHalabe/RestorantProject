@@ -92,6 +92,7 @@ h2 {
     flex-direction: column;
 } 
 
+
 .items > div {
     display: flex;
     justify-content: space-around;
@@ -234,3 +235,25 @@ h2 {
     background-color: #CA4E79;
 }
 
+  /*-------------- shoping basket ----------------*/
+
+.shopping-basket{
+    width: 400px;
+}
+
+.Total-items {
+    display: flex;
+    flex-direction: column;
+} 
+
+
+.Total-items > div {
+    display: flex;
+    justify-content: space-around;
+    
+    border-radius: 10px;
+}
+
+.Total-items > .burger {
+    background-color: #FFCB42;
+}
